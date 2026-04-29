@@ -1,0 +1,74 @@
+name: salah_tracker
+description: "A Muslim prayer times application with Qibla direction, Adkar, and notifications."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.2
+
+  # Networking
+  http: ^1.2.2
+
+  # Location
+  geolocator: ^13.0.2
+  geocoding: ^3.0.0
+
+  # Notifications
+  flutter_local_notifications: ^18.0.1
+  timezone: ^0.10.0
+
+  # Audio
+  just_audio: ^0.9.42
+  audio_session: ^0.1.21
+
+  # Compass
+  flutter_compass: ^0.8.1
+
+  # Storage
+  shared_preferences: ^2.3.4
+
+  # UI
+  intl: ^0.20.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/Fonts/naskh-arabic-regular.ttf
+    - assets/Adhkar/hisn_almuslim.json
+    - assets/Sounds/Azan/Azhan1.mp3
+    - assets/Sounds/Azan/Azhan2.mp3
+    - assets/Sounds/Azan/Azhan3.mp3
+    - assets/Sounds/Azan/Azhan4.mp3
+
+  fonts:
+    - family: NaskhArabic
+      fonts:
+        - asset: assets/Fonts/naskh-arabic-regular.ttf
+
+    - family: Tajawal
+      fonts:
+        - asset: assets/Fonts/Tajawal-Regular.ttf
+        - asset: assets/Fonts/Tajawal-Bold.ttf
+          weight: 700
+
+    - family: Almarai
+      fonts:
+        - asset: assets/Fonts/Almarai-Regular.ttf
+        - asset: assets/Fonts/Almarai-Bold.ttf
+          weight: 700
