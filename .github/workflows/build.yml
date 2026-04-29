@@ -1,4 +1,3 @@
-
 name: Build Flutter APK
 
 on:
@@ -12,7 +11,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.11.0
       
       - name: Setup Java
         uses: actions/setup-java@v4
